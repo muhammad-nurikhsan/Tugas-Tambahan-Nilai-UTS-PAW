@@ -1,0 +1,28 @@
+<html metal:use-macro="load: layout.pt">
+<head>
+    <title metal:fill-slot="title">${title}</title>
+</head>
+<body>
+    <div metal:fill-slot="content">
+        <h1>${title}</h1>
+        <h3 style="margin-top: 2rem;">Features Covered:</h3>
+        <ul style="margin-left: 2rem; margin-top: 1rem;">
+            <li tal:repeat="feature features" style="margin-bottom: 0.5rem;">
+                <span tal:content="feature">Feature</span>
+            </li>
+        </ul>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background: #fff3cd; border-radius: 4px;">
+            <strong>TAL Syntax Examples:</strong>
+            <pre style="margin-top: 0.5rem;">
+tal:repeat - Loop through items
+tal:condition - Conditional rendering
+tal:content - Set element content
+tal:attributes - Set element attributes
+metal:use-macro - Template inheritance
+metal:fill-slot - Fill macro slots
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

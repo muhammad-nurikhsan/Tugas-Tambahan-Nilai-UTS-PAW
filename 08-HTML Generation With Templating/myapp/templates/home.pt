@@ -1,0 +1,19 @@
+<html metal:use-macro="load: layout.pt">
+<head>
+    <title metal:fill-slot="title">${project}</title>
+</head>
+<body>
+    <div metal:fill-slot="content">
+        <h1>${project}</h1>
+        <p>${description}</p>
+        <div style="margin-top: 2rem; padding: 1rem; background: #e3f2fd; border-radius: 4px;">
+            <h3>TAL Features Demo:</h3>
+            <ul style="margin-top: 1rem; margin-left: 2rem;">
+                <li>Variable substitution: ${project}</li>
+                <li>Template inheritance (layout.pt)</li>
+                <li>Check other pages for more examples</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
