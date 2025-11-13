@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: myapp
+Version: 0.0.0
+Requires-Dist: pyramid
+Requires-Dist: waitress
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: webtest; extra == "testing"
+Dynamic: provides-extra
+Dynamic: requires-dist

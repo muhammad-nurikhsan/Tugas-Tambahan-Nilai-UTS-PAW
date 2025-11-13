@@ -1,0 +1,7 @@
+pyramid
+waitress
+
+[testing]
+pytest
+pytest-cov
+webtest

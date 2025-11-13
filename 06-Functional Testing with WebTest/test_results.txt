@@ -1,0 +1,25 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.0.1, pluggy-1.6.0 -- D:\Tugas-Tambahan-Nilai-UTS-PAW\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Tugas-Tambahan-Nilai-UTS-PAW\06-Functional Testing with WebTest
+plugins: cov-7.0.0
+collecting ... collected 5 items
+
+tests/test_functional.py::FunctionalTests::test_404 PASSED               [ 20%]
+tests/test_functional.py::FunctionalTests::test_api_json PASSED          [ 40%]
+tests/test_functional.py::FunctionalTests::test_home PASSED              [ 60%]
+tests/test_views.py::ViewTests::test_api_view PASSED                     [ 80%]
+tests/test_views.py::ViewTests::test_home_view PASSED                    [100%]
+
+============================== warnings summary ===============================
+..\venv\Lib\site-packages\pyramid\asset.py:2
+  D:\Tugas-Tambahan-Nilai-UTS-PAW\venv\Lib\site-packages\pyramid\asset.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+    import pkg_resources
+
+..\venv\Lib\site-packages\pkg_resources\__init__.py:3146
+  D:\Tugas-Tambahan-Nilai-UTS-PAW\venv\Lib\site-packages\pkg_resources\__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('paste')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 5 passed, 2 warnings in 0.59s ========================
