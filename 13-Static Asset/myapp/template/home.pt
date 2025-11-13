@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${project}</title>
+    <link rel="stylesheet" href="${request.static_url('myapp:static/css/style.css')}">
+</head>
+<body>
+    <div class="box">
+        <h1>${project}</h1>
+        <p>CSS and JS are loaded from static directory</p>
+        <img src="${request.static_url('myapp:static/images/logo.png')}" 
+             alt="Logo" style="max-width: 200px;">
+    </div>
+    <script src="${request.static_url('myapp:static/js/app.js')}"></script>
+</body>
+</html>

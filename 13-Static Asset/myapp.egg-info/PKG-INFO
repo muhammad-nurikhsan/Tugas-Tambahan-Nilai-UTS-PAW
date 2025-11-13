@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: myapp
+Version: 0.0.0
+Requires-Dist: pyramid
+Requires-Dist: pyramid_chameleon
+Requires-Dist: waitress
+Dynamic: requires-dist
